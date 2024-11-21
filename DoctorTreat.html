@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #h {
+        display: none;
+      }
+      body {
+        padding: 0;   
+        margin: 0;
+        font-family: sans-serif;
+      }
+      #tir{
+        /* position: absolute; */
+        background-color: rgb(182, 254, 255);
+        /* border:  none; */
+        border-radius: 0.2rem;
+      }
+      #A1 {
+        width: 22rem;
+        height: 23rem;
+        background-color: rgb(163, 212, 212);
+        padding: 3%;
+        border-radius: 15px;
+        margin: 5rem auto;  
+      }
+      #t1{
+        background-color:rgb(64, 186, 186);
+      }
+      table {
+        border-collapse: collapse;
+      }
+      #Treatment{
+        background-color:rgb(64, 186, 186);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="A1">
+
+      <h2>Doctor Treatment</h2>
+      <select name="TreatmaentName" id="t1" onchange="tirth()">
+        <option value="0">--Select Treatment--</option>
+        <option value="Teeth Cleanings">Teeth Cleanings</option>
+        <option value="Fillings">Fillings</option>
+        <option value="Root Canal Treatment">Root Canal Treatment</option>
+        <option value="RCT + Cover">RCT + Cover</option>
+        <option value="Braces/Invisalign">Braces/Invisalign</option>
+      </select>
+
+      <br /><br />
+
+      <div id="h">
+        <table border="1">
+          <tr>
+            <th>Treatment</th>
+            <th>Seating</th>
+            <th>Costing</th>
+          </tr>
+          <tr>
+            <td id="s1"></td>
+            <td id="s2"></td>
+            <td id="s3"></td>
+          </tr>
+        </table>
+
+        <br />
+-----------------------------------------------------------------
+        <form action="/action_page.php" onsubmit="tirthsub()">
+          <span for="Treatment">Select Date:</span>
+          <input type="date" id="Treatment" name="Treatment" />
+          <input id="tir" type="submit" />
+        </form>
+        <br /><br />
+
+        <div id="disp"></div>
+      </div>
+    </div>
+    <script src="Js/DoctorTreat.js"></script>
+  </body>
+</html>

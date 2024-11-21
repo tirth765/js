@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+  <body>
+    <form action="" onsubmit="handlesubmit()">
+      
+      
+      <input type="name" id="name" placeholder="Enter the name" name="name">
+      <span id="NameErr" class="error"></span><br><br>
+      <input type="date" name="jd" id="jd">   <span id="DateErr" class="error"></span><br><br>
+      <input type="text"placeholder="Enter the salary"name="salary"
+        id="salary">  <span id="SalaryErr" class="error"></span>
+
+
+      <br><br><input type="submit"><br><br>
+      <input
+        type="text"
+        placeholder="search......."
+        id="search"
+        onkeyup="handlescarchch()">
+    </form><br>
+    <select name="short" id="short" onchange="handlescarchch()">
+        <option value="0">--Select sort--</option>
+        <option value="1">Name: A-Z</option>
+        <option value="2">Name: Z-A</option>
+        <option value="3">salary: low to high</option>
+        <option value="4">salary: high to low</option>
+        
+    </select>
+    <br><br>
+
+    <div id="display"></div>
+
+    <script src="Js/Employee.js"></script>
+  </body>
+</html>

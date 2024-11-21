@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #name{
+            width: 40rem;
+            height: 23rem;
+            padding: 2rem;
+            margin: 10rem auto;
+            border: 2px solid black;
+            background-color: rgb(225, 197, 197);
+        }
+        .s1{
+            font-weight: 700;
+        }
+        
+    </style>
+    <div id="name">
+        <h1>Food Order System</h1>
+
+        <form action="" onsubmit="tirth ()">
+         <span class="s1">Food</span>
+         <input type="radio" value="burger" name="Food"><span>Burger</span>
+         <input type="radio" value="pizza" name="Food"><span>Pizza</span>
+         <input type="radio" value="sandwich" name="Food"><span>Sandwich</span>
+         <input type="radio" value="combo" name="Food"><span>Combo</span>
+     
+         <br><br>
+     
+         <span class="s1">Fries</span>   
+         <input type="radio" value="yes" name="fries"><span>Yes</span> 
+         <input type="radio" value="no" name="fries"><span>No</span>
+         <select name="num" id="fri_quon">   
+             <option value="0">--Select Quontity--</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+         </select>
+     
+         <br><br>
+     
+         <span class="s1">Cold Drinks</span>
+         <input type="radio" value="yes" name="drink"><span>Yes</span>
+         <input type="radio" value="no" name="drink"><span>No</span>
+         <select name="Drink-name" id="drinkk">
+             <option value="0">--Select Drink--</option>
+             <option value="ma">Mazza</option>
+             <option value="pe">Pepsi</option>
+             <option value="sp">Sprite</option>
+         </select>
+         <select name="drink-num" id="drin_quon"> 
+             <option value="0">--Select Quontity--</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+         </select>
+     
+         <br><br>
+     
+         <span>Coupan Code</span>
+         <input type="text" name="cc" id="cuppun" placeholder="">
+         
+         <br><br>
+     
+         <button name="order" type="submit">Order Food</button>
+     
+         <br><br>
+     
+         <div id="f"></div>
+         <div id="fr"></div>
+         <div id="cd"></div>
+         <div id="cu"></div>
+         <div id="dis"></div>
+         <div id="total"></div>
+     
+</div>
+
+
+    <script src="Js/Foood_Orader.js"></script>
+</body>
+</html>

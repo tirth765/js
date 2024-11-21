@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Js/Budget.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="max">
+        <div id="main">
+
+            <h2>Budget App</h2>
+
+            <div class="box">
+                <form action="" id="f1">
+                    <p>Enter Your Budget:</p> <br>
+                    <input type="text" id="Budget">
+                    <p id="BudgetError" class="error"></p>
+                    <br>
+                    <button id="button">calculate</button>
+                </form><br><br>
+            </div>
+
+            <div class="box">
+                <form action="" id="f2">
+                    <p>Enter Your Expense</p> <br>
+                    <input type="text" id="Expense">
+                    <p id="ExpenseError" class="error"></p>
+                    <br>
+                    <p>Enter Expense Amount</p><br>
+                    <input type="text" id="Expense_amo">
+                    <p id="ExpenseAmoError" class="error"> </p>
+                    <br>
+                    <button id="button">Add Expense</button>
+                </form>
+            </div>
+
+            
+            
+        </div>
+
+        <div id="buget">
+            <table border="1" class="edit1">
+                <tr>
+                    <td>
+                        <p><i class="fa-solid fa-money-bill-1 edit"></i> Budget: </p>
+                    </td>
+                    <td>
+                        <span class="colour">$</span><span id="budget" class="colour">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><i class="fa-solid fa-credit-card edit"></i> Expense: </span> </p>
+                    </td>
+                    <td>
+                        <span class="col">$</span><span id="expense" class="col">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><i class="fa-solid fa-hand-holding-dollar edit"></i> Balance: </p>
+                    </td>
+                    <td>
+                        <span class="colour">$</span> <span id="bal" class="colour">0</span>
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+
+
+        
+        <div id="data">
+            <table border="1">
+                <tr>
+                    <td>
+                        <div id="MainEle"></div>
+                        <div id="Exp-456">
+                            <span id="ExpTitle"></span>
+                            <span id="ExpValue"></span>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+               
+    </div>
+
+
+
+    <script src="Js/Budget.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the ticket details */
+#ticket-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Headers */
+th {
+    background-color: #397e8d;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Table Data Cells */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the Movie Name, Date, and Time */
+td {
+    font-size: 16px;
+    font-weight: normal;
+    background-color:rgb(124, 190, 212);
+}
+
+/* Optional: Border for the table */
+table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}

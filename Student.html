@@ -1,0 +1,42 @@
+<html>
+  <head><title>Document</title>
+  </head>
+  <body>
+   
+    <div id="s1">
+    <form action="" onsubmit="handlesubmit()">
+      <input
+        type="text"
+        placeholder="Enter your Name"
+        name="name"
+        id="name"><br><br>
+      <input
+        type="number"
+        placeholder="Enter your Roll_no"
+        name="no"
+        id="Roll_no"/><br><br>
+      <input
+        type="text"
+        placeholder="Enter your Course"
+        id="Course"/><br><br>
+      <input
+        type="number"
+        placeholder="Enter your Fees"
+        id="Fess"><br><br>
+      <input type="submit" /><br><br>
+      <input type="text"id="search"placeholder="search...."onkeyup="handlesearchshort()">
+    </form><br>
+    <select name="" id="sort" onchange="handlesearchshort()">
+      <option value="0">--Select--</option>
+      <option value="1">Name: A to Z</option>
+      <option value="2">Name: Z to A</option>
+      <option value="3">Roll_no: ascending</option>
+      <option value="4">Roll_no: descending</option>
+      <option value="5">Fess: low to high</option>
+      <option value="6">Fess: high to low</option>
+      </select><br><br>
+    <div id="display"></div>
+</div>
+    <script src="Js/Student.js"></script>
+  </body>
+</html>

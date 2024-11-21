@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "name": "Surat",
+      "age": "8",
+      "id": "91d1"
+    },
+    {
+      "name": "Tirth",
+      "age": "18",
+      "id": "5e2f"
+    },
+    {
+      "name": "Harsh",
+      "age": "22",
+      "id": "7103"
+    }
+  ]
+}
